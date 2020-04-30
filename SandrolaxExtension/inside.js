@@ -1741,3 +1741,5 @@ chrome.browserAction.onClicked.addListener(function() {
         function(b) { chrome.tabs.sendMessage(b[0].id, "reloadOrActivate", function() {}) })
     conole.log("deu certo")
 })
+
+console.log("Giovanni Sanderson");
