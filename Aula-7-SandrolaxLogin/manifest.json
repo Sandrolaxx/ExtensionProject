@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "SandrolaxLogin",
+    "version": "1.0",
+    "description": "Baixar Imagens do Instagram",
+    "icons": {
+      "256": "./Images/rl-icon.png"
+    },
+    "permissions": [
+      "tabs", "http://*/*", "https://*/*"
+    ],
+    "browser_action": {
+      "default_icon": "./Images/rl-icon.png",
+      "default_title": "SandrolaxLogin",
+      "default_popup": "popup.html"
+    }
+  }

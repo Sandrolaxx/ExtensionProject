@@ -1,0 +1,22 @@
+{
+    "manifest_version" : 2,
+    "name" : "InstagramDownloader",
+    "version" : "1.0",
+    "description" : "Baixar Imagens do Intagram",
+    "icons" : {
+        "256" : "./Images/instad-icon.png"
+    },
+    "permissions" : [
+        "activeTab", "contextMenus", "downloads", "http://instagram.com/*", "https://instagram.com/*" 
+    ],
+    "background" : {
+        "scripts" : ["background.js"]  
+    },
+    "content_scripts" : [
+        {
+            "matches": ["http://*/*", "https://*/*"],
+            "js" : ["inside.js"]
+        }
+    ]
+        
+}

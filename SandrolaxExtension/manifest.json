@@ -1,0 +1,19 @@
+{
+    "manifest_version" : 2,
+    "name" : "WhatsApp Listener",
+    "version" : "1.0",
+    "description" : "Extensão para gravar as conversas dos consultores da rede ISP",
+    "icons" : {
+        "325" : "./Images/ISP-icon.png"
+    },
+    "permissions" : [
+        "activeTab", "http://web.whatsapp.com/", "https://web.whatsapp.com/", "http://web.whatsapp.com.br/"
+    ],
+  
+    "content_scripts" : [
+        {
+            "matches": ["https://web.whatsapp.com/", "https://web.whatsapp.com/"],
+            "js" : ["inside.js"]
+        }
+    ]
+}
